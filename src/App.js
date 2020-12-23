@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { AddProducts } from './components/AddProducts';
 import { Home } from './components/Home'
 
 export class App extends Component {
@@ -8,6 +9,7 @@ export class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route path='/addproducts' component={AddProducts} />
         </Switch>
       </BrowserRouter>
     )
@@ -15,4 +17,5 @@ export class App extends Component {
   }
 
 export default App;
+
 
